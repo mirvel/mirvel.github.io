@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mirvel Inc. IT and Accounting Solutions">
+    <title>Mirvel Inc. - IT and Accounting Solutions</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1c1e22;
+            color: #d1d1d1;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #121416;
+            color: #66fcf1;
+            text-align: center;
+            padding: 2em 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0b0c10;
+            padding: 1em 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #66fcf1;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #45a29e;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: #66fcf1;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .service-card {
+            background-color: #2b2e34;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .service-card h2 {
+            margin-top: 0;
+            font-size: 1.5em;
+            color: #45a29e;
+        }
+
+        .service-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .service-card ul li {
+            margin-bottom: 10px;
+            color: #c5c6c7;
+        }
+
+        footer {
+            background-color: #0b0c10;
+            color: #66fcf1;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            .service-card {
+                padding: 15px;
+            }
+
+            nav a {
+                font-size: 1em;
+                margin: 0 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 5px 0;
+            }
+
+            section {
+                padding: 20px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mirvel Inc.</h1>
+        <p>Comprehensive IT and Accounting Software Solutions</p>
+    </header>
+
+    <nav>
+        <a href="#it-consulting">IT Consulting</a>
+        <a href="#software-development">Software Development</a>
+        <a href="#it-support">IT Support</a>
+        <a href="#network-administration">Network Administration</a>
+        <a href="#accounting-software">Accounting Software</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At Mirvel Inc, we are dedicated to delivering comprehensive IT and accounting software solutions tailored to meet the needs of businesses of all sizes. With a strong foundation in technology and business systems, our team leverages years of experience in the IT and accounting sectors to provide reliable, efficient, and customized services. We pride ourselves on helping clients optimize their operations through innovative solutions and expert guidance.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services">
+
+            <div class="service-card" id="it-consulting">
+                <h2>IT Consulting</h2>
+                <ul>
+                    <li>Strategic IT planning to align technology with your business goals</li>
+                    <li>Technology assessments and system evaluations</li>
+                    <li>IT infrastructure design and optimization</li>
+                    <li>Cybersecurity consultation and risk management</li>
+                </ul>
+            </div>
+
+            <div class="service-card" id="software-development">
+                <h2>Software Development</h2>
+                <ul>
+                    <li>Custom software development for business applications</li>
+                    <li>Web and mobile app development</li>
+                    <li>Integration of existing systems with new technologies</li>
+                    <li>Software maintenance and support</li>
+                </ul>
+            </div>
+
+            <div class="service-card" id="it-support">
+                <h2>IT Support & Maintenance</h2>
+                <ul>
+                    <li>Comprehensive IT support for hardware, software, and network issues</li>
+                    <li>Remote and onsite troubleshooting</li>
+                    <li>System monitoring and maintenance to prevent downtime</li>
+                    <li>User training and ongoing support</li>
+                </ul>
+            </div>
+
+            <div class="service-card" id="network-administration">
+                <h2>Network Administration</h2>
+                <ul>
+                    <li>Network design, installation, and optimization</li>
+                    <li>Ongoing monitoring and network health assessments</li>
+                    <li>Secure and efficient setup of LAN, WAN, and VPN connections</li>
+                    <li>Cloud integration and data backup solutions</li>
+                </ul>
+            </div>
+
+            <div class="service-card" id="accounting-software">
+                <h2>Accounting Software Consultation</h2>
+                <ul>
+                    <li>QuickBooks Online and Sage 50 Accounting setup and training</li>
+                    <li>Customization and integration with existing business systems</li>
+                    <li>Ongoing support for accounting software usage</li>
+                    <li>Financial reporting and data analysis support</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>Mirvel Inc. &copy; 2024 - All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
